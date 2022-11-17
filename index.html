@@ -103,6 +103,10 @@
 
         } 
 
+    a {
+        color: transparent;
+}
+
   
 
 
@@ -132,12 +136,17 @@
     <h2>Store</h2>
     <p>Knäckebrot Grandma: 10 clicks</p>
     <img id="buy" src="/Downloads/Grandma.png" width=111px>
-    <p id="clicker">x1</p>
+    <p id="clicker">x0</p>
 
     <p>Knäckebrot God: 10'000 clicks</p>
     <img id="buy-auto-clicker" src="/Downloads/Grandma.png" width=111px>
     <p id="auto-clickers">x0</p>
 
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+    <p>Rick Astley: Free</p>
+    <img id="Rick" src="/Downloads/Knäckebrot.png" width=111px>
+    <p id="Rick">x0</p>
+    </a>
 
 
 
@@ -197,13 +206,14 @@
 
 
         document.getElementById("Rick").addEventListener("click", function () {
-            if (score >= 50000) {
-                score = score - 50000;
-                autoclickers = autoClickers + 4; 
+            alert ("You Really Thought, You Would Get Rick Rolled?")
+            if (score >= 0) {
+                score = score - 0;
                 document.getElementById("scoreText").innerText = "Score: " + score;
                 document.getElementById("auto-clickers").innerText = "x" + autoClickers;
             }
-        });
+            }
+        );
 
 
         document.getElementById("auto-auto").addEventListener("click", function myFunction() {
@@ -216,14 +226,6 @@
         });
 
 
-        function myFunction() {
-        alert ("The Following Content May Be Disturbing");
-
-
-
-
-
-        }
 
 
         
